@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones con JQUERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <style>
+        /* mis estilos */
+    h3{
+        text-decoration: underline;
+        color: darkblue;
+        
+    }
+    .intro {
+        font-size: 150%;
+        color: white;
+        background-color: purple;
+
+        
+}
+    
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Funciones jQuery</h1>
+                <h3>Hide-Show-Toggle</h3>
+                <img src="img/word-image-1.png" alt="jquery" width="500">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor repudiandae molestiae accusantium voluptatem reiciendis? Repellat rerum, architecto voluptates reprehenderit alias quisquam deleniti doloribus nisi commodi eveniet assumenda labore recusandae?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eaque, aut fuga non aperiam expedita blanditiis, ipsum deserunt dignissimos nemo temporibus, libero repudiandae similique ad reprehenderit labore illo in dolor!</p>
+                <button id="btnHide" class="btn btn-success btn-lg m-2">Hide Photo</button>
+                <button id="btnShow" class="btn btn-success btn-lg m-2">Show Photo</button>
+                <button id="btnToggle" class="btn btn-success btn-lg m-2">Toggle Photo</button>
+            </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-6">
+            <h3>Slide Down-Up-Toggle.</h3>
+            <button type="button" class="btn btn-primary btn-lg btnMostrar m-2">Ingresar Datos</button>
+            <form class="formulario">
+                <div class="mb-3 mt-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <button type="button" class="btn btn-warning btn-lg btnOcultar  m-2">Ocultar Datos</button>
+              <button type="button" class="btn btn-success btn-lg btnToggle2  m-2">Mostrar/Ocultar Datos</button>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h3>Fade In-Out.</h3>
+                <button type="button" class="btn btn-dark btn-lg m-2 btnAPP">Ver mas</button>
+                <button type="button" class="btn btn-dark btn-lg m-2 btnAPM"> Ver menos</button>
+            </div>
+        </div>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="listIcon">
+                       <img src="img/jQuery.png" alt="" width="150">
+                       <img src="img/mysql.png" alt="" width="150">
+                       <img src="img/python.png" alt="" width="150">
+                       <img src="img/nodejs.png" alt="" width="150">
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="listIcon">
+                       <img src="img/JavaScript.png" alt="" width="150">
+                       <img src="img/HTML.png" alt="" width="150">
+                       <img src="img/CSS.png" alt="" width="150">
+                       <img src="img/github.png" alt="" width="150">
+                      </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h3>Add Class.</h3>
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga voluptatibus consequuntur dolor commodi cumque vitae atque enim adipisci. Placeat, numquam. Magni possimus impedit suscipit corporis at minima saepe facilis.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h3>Before.</h3>
+                    <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed a nostrum voluptate, quod dolor perferendis ducimus repudiandae quam molestiae dolores voluptatum iure iste blanditiis, molestias velit. Nostrum, sed saepe?</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h3>After.</h3>
+                    <p class="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed a nostrum voluptate, quod dolor perferendis ducimus repudiandae quam molestiae dolores voluptatum iure iste blanditiis, molestias velit. Nostrum, sed saepe?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Append</h3>
+                    <button type="button" class="btn btn-primary btn-lg m-2 btnList">Agregar Item</button>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                        <li class="list-group-item list-group-item-primary">A simple secondary list group item</li>
+                        <li class="list-group-item list-group-item-primary">A simple success list group item</li>
+                        <li class="list-group-item list-group-item-primary">A simple danger list group item</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h3>jquery .html</h3>
+                    <p class="p4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptates ipsam ipsum at neque ab, cumque provident earum natus ea corporis eos officia veritatis nesciunt sapiente cupiditate explicabo optio vitae.</p>
+                    <a href="https://learn.codingdojo.com"></a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h3>attr</h3>
+                    <img id="linkedin" src="img/linkedin.png" alt="linkedin" width="200">
+                    
+                </div>
+            </div>
+        
+    </div>
+    
+
+
+
+    <!-- DESDE ACA SOLO SCRIPT -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        // TU CODIGO:
+        //$("h1").html("HOLA MUNDO");
+        $('.formulario').hide();
+        $('.listIcon').hide();
+
+        $('#btnHide').click(function () { 
+            $('img').hide();
+         })
+         $('#btnShow').click(function () { 
+            $('img').show();
+         })
+         $('#btnToggle').click(function () { 
+            $('img').toggle();
+         })
+         $('.btnMostrar').click(function () { 
+            $('.formulario').slideDown("slow");
+         })
+         $('.btnOcultar').click(function () { 
+            $('.formulario').slideUp("slow");
+         })
+         $('.btnToggle2').click(function () { 
+            $('.formulario').slideToggle("slow");
+         })
+         $('.btnAPP').click(function(){
+             $('.listIcon').fadeIn("slow");
+         })
+         $('.btnAPM').click(function(){
+             $('.listIcon').fadeOut("slow");
+         })
+         $('.p1').click(function(){
+             $('.p1').addClass("intro");
+         })
+         $('.p2').click(function(){
+             $('.p2').before("<p>Agregando texto Antes!!!!!!</p>");
+         })
+         $('.p3').click(function(){
+             $('.p3').after("<p>Agregando texto Despues!!!!!!</p>");
+         })
+         $('.btnList').click(function(){
+            $("ul").append("<li class='list-group-item list-group-item-primary'>Nuevo ITEM</li>");
+         })
+         $('.p4').click(function(){
+             $('.p4').html("<a href='https://learn.codingdojo.com'>IR A CODING DOJOOOO</a>");
+         })
+         $('#linkedin').click(function(){
+            
+            //$("#linkedin").attr("src");
+             $('#linkedin').attr("src", "img/twitter.png");
+         })
+
+     
+
+    </script>
+</body>
+</html>
